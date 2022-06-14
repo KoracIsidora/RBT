@@ -99,3 +99,17 @@ input {
 
 h1 {
   font-size: 16px; }
+
+table {
+  max-width: 900px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  margin: 0 auto; }
+
+tr:first-child {
+  height: 170px;
+  background-image: url("/Task-2/images/spices.png");
+  background-size: auto 170px;
+  background-repeat: repeat;
+  padding-bottom: 30px; }

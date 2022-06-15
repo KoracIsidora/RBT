@@ -1,3 +1,16 @@
 h1 {
-    font-size: $font-size-base;
+    font-size: 30px;
+    font-family: $font-family-arial;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: $white;
+}
+
+p {
+    font-size: $font-size-small;
+    font-family: $font-family-times;
+    text-align: justify;
+    margin-bottom: 25px;
+    line-height: 1.2;
 }

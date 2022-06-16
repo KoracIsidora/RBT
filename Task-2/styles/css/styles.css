@@ -135,33 +135,28 @@ table {
   padding: 25px 10px 30px 10px;
   width: 300px;
   vertical-align: top; }
-
-ul {
-  margin-left: 40px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin-bottom: 20px; }
-  ul li {
-    list-style-type: square; }
-  ul ul {
-    margin-bottom: 0; }
-  ul:first-child li {
-    list-style-type: circle; }
-
-p span {
-  font-style: italic;
-  font-weight: bold; }
-
-a {
-  color: #FFFFFF;
-  text-align: center; }
-  a:visited {
-    color: #FFFFFF; }
-  a:hover {
-    color: #000000; }
-  a p {
-    text-align: center;
-    margin-bottom: 0; }
+  .spices p span {
+    font-style: italic;
+    font-weight: bold; }
+  .spices ul {
+    margin-left: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px; }
+    .spices ul li {
+      list-style-type: square; }
+    .spices ul ul {
+      margin-bottom: 0; }
+    .spices ul:first-child li {
+      list-style-type: circle; }
+  .spices a {
+    color: #FFFFFF;
+    text-align: center; }
+    .spices a:hover {
+      color: #000000; }
+    .spices a p {
+      text-align: center;
+      margin-bottom: 0; }
 
 .production {
   background-color: #8B7500;
@@ -196,9 +191,7 @@ a {
     .production span a {
       color: #CDAD00; }
       .production span a:hover {
-        color: #000000 !important; }
-      .production span a:visited {
-        color: #CDAD00; }
+        color: #000000; }
 
 .spice {
   vertical-align: bottom; }

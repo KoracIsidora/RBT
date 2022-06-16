@@ -101,7 +101,7 @@ h1 {
   font-size: 30px;
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: bold;
   color: #FFFFFF; }
 
@@ -109,8 +109,12 @@ p {
   font-size: 14px;
   font-family: "Times New Roman", Times, serif;
   text-align: justify;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   line-height: 1.2; }
+
+body {
+  display: flex;
+  justify-content: center; }
 
 table {
   border-collapse: separate;
@@ -129,13 +133,14 @@ table {
 .spices {
   background-color: #CDAD00;
   padding: 25px 10px 30px 10px;
-  width: 300px; }
+  width: 300px;
+  vertical-align: top; }
 
 ul {
   margin-left: 40px;
   font-family: Arial, sans-serif;
   font-size: 16px;
-  margin-bottom: 25px; }
+  margin-bottom: 20px; }
   ul li {
     list-style-type: square; }
   ul ul {
@@ -194,3 +199,13 @@ a {
         color: #000000 !important; }
       .production span a:visited {
         color: #CDAD00; }
+
+.spice {
+  vertical-align: bottom;
+  margin-bottom: -30px; }
+
+img {
+  width: 153px;
+  height: 86px;
+  float: right;
+  margin: 130px 0 -30px 0; }

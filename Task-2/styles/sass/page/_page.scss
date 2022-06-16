@@ -1,3 +1,8 @@
+
+body {
+  display: flex;
+  justify-content: center;
+}
 table {
   border-collapse: separate;
   border-spacing: 50px 30px;
@@ -19,13 +24,14 @@ table {
   background-color: $gold-light;
   padding: 25px 10px 30px 10px;
   width: 300px;
+  vertical-align: top;
 }
 
 ul {
   margin-left: 40px;
   font-family: $font-family-arial;
   font-size: $font-size-base;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   li {
     list-style-type: square;
@@ -117,4 +123,16 @@ a {
       }
     }
   }
+}
+
+.spice {
+  vertical-align: bottom;
+  margin-bottom: -30px;
+}
+
+img {
+  width: 153px;
+  height: 86px;
+  float: right;
+  margin: 130px 0 -30px 0;
 }

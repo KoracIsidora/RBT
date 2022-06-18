@@ -9,7 +9,7 @@
           }"
           class="router-link"
         >
-          <li><Filmstrip :size="18" class="icon" />{{ post.name }}</li>
+          <Filmstrip :size="18" class="icon" />{{ post.name }}
         </router-link>
       </li>
     </ul>
@@ -26,3 +26,37 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.router-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.router-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.router-link:hover {
+  color: #f5c518;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .router-link {
+    font-size: 1rem;
+  }
+}
+</style>

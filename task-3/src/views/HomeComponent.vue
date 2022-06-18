@@ -13,7 +13,7 @@
     </div>
     <div :class="posts.length > 0 ? 'container__posts' : 'flex'">
       <PostComponent v-if="posts.length > 0" :posts="posts" />
-      <MovieOpenPlay v-else fillColor="#f5c518" :size="110" />
+      <MovieOpenPlay v-else fillColor="#f5c518" :size="130" />
     </div>
   </div>
 </template>
@@ -75,3 +75,67 @@ export default {
   },
 };
 </script>
+
+<style>
+p {
+  max-width: 30rem;
+}
+
+.container__category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 55rem;
+  margin: 0 auto 3rem;
+}
+
+.container__posts {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.container__posts ul {
+  padding: 0;
+}
+
+.container__posts ul li {
+  list-style-type: none;
+  max-width: max-content;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v-select {
+  max-width: 35.5rem;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #271d19;
+}
+
+.vs__dropdown-toggle {
+  padding: 0.2rem 0.1rem;
+}
+
+.vs__selected {
+  font-size: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__category,
+  .container__posts {
+    max-width: 40rem;
+  }
+}
+
+@media screen and (max-width: 768) {
+  .container__posts {
+    max-width: 35.5rem;
+  }
+}
+</style>

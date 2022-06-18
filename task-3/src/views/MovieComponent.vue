@@ -88,3 +88,48 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+p {
+  width: 100%;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.container__movie {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5c518;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+iframe {
+  width: 100%;
+  height: 35rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .container__movie {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+  iframe {
+    height: 19rem;
+  }
+}
+</style>

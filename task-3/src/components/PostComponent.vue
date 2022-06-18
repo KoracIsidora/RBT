@@ -3,7 +3,10 @@
     <ul>
       <li v-for="post in posts" :key="post.id">
         <router-link
-          :to="{ name: 'Movie', params: { id: post.id } }"
+          :to="{
+            name: 'Movie',
+            params: { categoryId: post.categoryId, id: post.id },
+          }"
           class="router-link"
         >
           <li><Filmstrip :size="18" class="icon" />{{ post.name }}</li>

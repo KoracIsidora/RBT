@@ -31,11 +31,9 @@ export default {
 .router-link {
   text-decoration: none;
   color: #ffffff;
-}
-
-.router-link {
   font-size: 1.5rem;
   font-weight: 600;
+  display: inline-flex;
 }
 
 .router-link:hover {

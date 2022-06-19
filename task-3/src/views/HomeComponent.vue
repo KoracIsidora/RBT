@@ -2,7 +2,7 @@
   <div class="home">
     <h1>{{ heading }}</h1>
     <div class="container__category">
-      <p>{{ choseCategoryText }}</p>
+      <p class="chose-category">{{ choseCategoryText }}</p>
       <v-select
         @input="showCategoryPosts"
         label="name"
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style>
-p {
+.chose-category {
   max-width: 30rem;
 }
 
